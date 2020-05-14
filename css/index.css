@@ -1,0 +1,154 @@
+header{
+	border: solid 1px red;
+	background-image: url('../img/bike1.jpg');
+	margin-bottom: 10px;
+}
+
+h1, h2, h3{
+	font-family: 'Shadows Into Light', cursive;
+	-webkit-text-stroke: .1px red;
+	color: white;
+	text-align: center;
+}
+
+h2{
+	text-decoration: underline;
+	text-decoration-color: black;
+	font-size: 44px;
+}
+
+h3{
+	font-size: 34px;
+	letter-spacing: 5px;
+}
+
+#navbar{
+	background-color: black;
+	height: 30px;
+	border: solid 1px red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+ nav a{
+	text-decoration: none;
+	margin-right: 20px;
+	color: red;
+	font-size: 24px;
+}
+
+blockquote{
+	font-size: 24px;
+}
+
+.subscribe{
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	height: 40px;
+}
+.card{
+	background-color: black;
+	border: solid 1px red;
+	margin-bottom: 5px;
+	padding: 0px 15px 0px 15px;
+}
+
+p{
+	color: white;
+	font-size: 20px;
+}
+
+.aLink{
+	color: red;
+	text-decoration: none;
+}
+
+#footLogos{
+	background-color: red;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.socials{
+	margin-right: 15px;
+}
+
+.picCard{
+	float: left;
+	height: 150px;
+	width: 150px;
+	margin-right: 10px;
+}
+
+figcaption{
+	color: white;
+}
+
+
+/* ----- Large Screen Media Query ----- */
+
+@media only screen and (min-width: 600px){
+
+	.container{
+	display: grid;
+	grid-template-columns: 300px 300px 300px 300px;
+	grid-template-rows: 150px 20px 400px 200px 110px;
+}
+
+header{
+	grid-area: 1/1/1/6;
+	width: 100%;
+	background-size: contain;
+}
+
+h1{
+	font-size: 60px;
+}
+
+h3{
+	margin: -5px;
+}
+#navbar{
+	grid-area: 2/1/2/6;
+}
+
+a:hover{
+	color: dodgerblue;
+}
+
+.subscribe{
+	grid-area:3/1/3/1;
+}
+
+blockquote{
+	grid-area: 4/3/3/4;
+}
+
+#main{
+	grid-area: 3/2/4/5;
+}
+
+#move{
+	grid-area: 3/5/3/5;
+}
+
+
+#footLogos{
+	grid-area: foot;
+}
+
+hr{
+	display:none;
+}
+
+footer{
+	grid-area: 6/1/6/6;
+	border: solid 5px black;
+}
+}
+
