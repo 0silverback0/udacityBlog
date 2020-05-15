@@ -1,0 +1,25 @@
+header{
+	border: solid 1px red;
+	background-image: url('../img/bike1.jpg');
+	margin-bottom: 10px;
+}
+
+h1{
+	font-family: 'Shadows Into Light', cursive;
+	-webkit-text-stroke: .1px red;
+	color: white;
+	text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+	header{
+	grid-area: 1/1/1/6;
+	width: 100%;
+	background-size: contain;
+}
+
+h1{
+	font-size: 60px;
+}
+
+}

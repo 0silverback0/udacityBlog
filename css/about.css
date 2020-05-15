@@ -1,0 +1,144 @@
+@import 'headerCss.css';
+
+.container{
+	grid-template-rows: 200px 50px 400px 400px 800px;
+	grid-template-columns: 1200px;
+}
+
+h2, h3{
+	font-family: 'Shadows Into Light', cursive;
+	-webkit-text-stroke: .1px red;
+	color: white;
+	text-align: center;
+}
+
+h2{
+	text-decoration: underline;
+	text-decoration-color: black;
+	font-size: 44px;
+}
+
+h3{
+	font-size: 34px;
+	letter-spacing: 5px;
+}
+
+#navbar{
+	background-color: black;
+	height: 30px;
+	border: solid 1px red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ nav a{
+	text-decoration: none;
+	margin-right: 20px;
+	color: red;
+	font-size: 24px;
+}
+
+.aLink{
+	color: red;
+	text-decoration: none;
+}
+
+#footLogos{
+	background-color: red;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.socials{
+	margin-right: 15px;
+}
+
+
+#avatarCard{
+	display: grid;
+	grid-template-rows: 150px 150px;
+	grid-template-columns: 150px 150px;
+	margin-top: 30px;
+	justify-content: center;
+	align-items: center;
+}
+
+.avatar1{
+	grid-area: 1/1/1/2;
+	height: 150px;
+	width: 150px;
+}
+
+.avatar2{
+	grid-area: 1/2/1/2;
+	height: 150px;
+	width: 150px;
+}
+
+.avatar3{
+	grid-area: 2/1/2/1;
+	height: 150px;
+	width: 150px;
+}
+
+.avatar4{
+	grid-area: 2/2/2/2;
+	height: 150px;
+	width: 150px;
+}
+
+footer{
+	border: solid 5px black;
+}
+
+figcaption{
+	text-align: center;
+}
+
+
+/* --- Large Screen Media Query --- */
+
+@media only screen and (min-width: 600px){
+	#avatarCard{
+	display: grid;
+	grid-template-rows: 300px 300px;
+	grid-template-columns: 300px 300px;
+	margin-top: 30px;
+	justify-content: center;
+	align-items: center;
+}
+
+p{
+	font-size: 24px;
+	margin: 20px;
+}
+
+.avatar1{
+	grid-area: 1/1/1/2;
+	height: 300px;
+	width: 300px;
+}
+
+.avatar2{
+	grid-area: 1/2/1/2;
+	height: 300px;
+	width: 300px;
+}
+
+.avatar3{
+	grid-area: 2/1/2/1;
+	height: 300px;
+	width: 300px;
+}
+
+.avatar4{
+	grid-area: 2/2/2/2;
+	height: 300px;
+	width: 300px;
+}
+}
+
+

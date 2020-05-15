@@ -1,0 +1,82 @@
+@import 'headerCss.css';
+
+h2{
+	font-family: 'Shadows Into Light', cursive;
+	-webkit-text-stroke: .1px red;
+	color: white;
+	text-align: center;
+	text-decoration: underline black;
+}
+
+#navbar{
+	background-color: black;
+	height: 30px;
+	border: solid 1px red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.flexPics{
+	display: flex;
+	justify-content: center;
+	height: 120px;
+}
+
+.pics{
+	height: 100px;
+	width: 100px;
+	margin-top: 10px;
+}
+
+ nav a{
+	text-decoration: none;
+	margin-right: 20px;
+	color: red;
+	font-size: 24px;
+}
+
+#footLogos{
+	background-color: red;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.socials{
+	margin-right: 15px;
+}
+
+footer{
+	width: 100%;
+	border: solid 5px black;
+}
+
+figcaption{
+	text-align: center;
+	margin-top: 10px;
+}
+
+
+/*---Large Screen Media Query ---*/
+
+@media only screen and (min-width: 600px) {
+
+	h2{
+		font-size: 40px;
+	}
+
+	.flexPics{
+		display: flex;
+		height: 200px;
+	}
+
+	.pics{
+		height: 200px;
+		
+	}
+
+
+}
